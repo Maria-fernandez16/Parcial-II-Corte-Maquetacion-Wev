@@ -1,0 +1,173 @@
+/* Patrones Globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía 1*/
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Nanum Gothic', sans-serif; font-family: 'Open Sans Condensed', sans-serif;}
+
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+
+/* Estilo Propio */
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp {  width: 45px; height: 45px; margin: 0; float: none; position: fixed; right: 15px; bottom: 15px; z-index: 99998;}
+aside#boton-wp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; background: #0F5E4F; border-radius: 50%; text-align: center; padding: 10px 0; transition: all 0.3s ease-in ;}
+aside#boton-wp a i { font-size: 1.5em; line-height: 1em; color: #fff; transition: all 0.3s ease-in;}
+aside#boton-wp a:hover { background: #000; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover i { color: #00abbb; transition: all 0.3s ease-in; }
+
+/* Componente Menú Responsive */
+/* Comp Menú Responsive */
+
+aside#menu-moviles { width: 295px; height: 100%; display: block; margin: 0; float: none; position: fixed; right: -295px; top: 0; z-index: 99999; background: #0F5E4F;}
+
+aside#menu-moviles a#abrir-menu {  height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -50px; display: block; text-decoration: none; color: #00abbb; font-weight: 600; font-size: 2em; line-height: 1em; transition: all 0.3s ease-in;}
+
+aside#menu-moviles a#abrir-menu:hover {  color: rgb(87, 113, 116); transition: all 0.3s ease-in }
+
+
+aside#menu-moviles a#cerrar-menu { height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: rgb(58, 104, 112); font-weight: 600; font-size: 2em; line-height: 1em; transition: all 0.3s ease-in;}
+
+aside#menu-moviles a#cerrar-menu:hover { color: rgb(18, 83, 74); transition: all 0.3s ease-in;}
+
+
+aside#menu-moviles nav { width: 60%;height: auto;margin: 15% 10%;float: none;position: relative;}
+
+aside#menu-moviles nav a {  width: 100%; height: auto;  display: block; margin: 0 auto; float: none; position: relative; color: #E1EDD2; font-weight: 600; font-size: 1em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in;}
+
+aside#menu-moviles nav a:hover {  color: 56C0CF; transition: all 0.3s ease-in;}
+
+/*HEADER*/
+header {  width: 100%; height: 70px; margin: 0; float: none; left: 0; top: 0; z-index: 99990; background: #DADADA no-repeat top center; position: fixed; background-size: cover; overflow: hidden;}
+
+header.no-sticky {height: 70px; position: relative;}
+header.sticky {height: 70px; position: fixed; background: #dadada6c no-repeat top center ;}
+
+header  article { width: 100%; height: 100px; margin: 0 auto; float: none; position: relative;}
+header  article figure { width: 100%; height: 100px; margin: 0 auto; float: none; position: relative; }
+header  article figure a { width: 100%; height: 100px; margin: 0 auto; float: none; position: relative; }
+header  article figure a img { width: auto; height: 60px; position: fixed; margin: 0 450px; float: none; padding: 6px 0;}
+
+
+/* Caja Main */
+main { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+
+/*Zona slick slider*/
+main section#zona-slider { width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative;}
+main section#zona-slider article.slick-slider { width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative;}
+
+main section#zona-slider article.slick-slider figure#slide-01 { width: 100%;height: 100vh;margin: 0;float: left;position: relative;background: url('https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=787&q=80') no-repeat top center;background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-01 h3{ text-align: center; margin: 160px 0; font-size: 3em; font-weight: 500; color: #ffffff; text-shadow: 0 0 5px #000; padding: 51px 0 15px;}
+
+main section#zona-slider article.slick-slider figure#slide-02 {width: 100%;height: 100vh;margin: 0;float: left;position: relative;background: url('https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80') no-repeat top center;background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-02 h3{text-align: center; margin: 160px 0; font-size: 3em; font-weight: 500; color: #ffffff;text-shadow: 0 0 5px #000;  padding: 51px 0 15px;}
+
+main section#zona-slider article.slick-slider figure#slide-03 {width: 100%;height: 100vh;margin: 0;float: left;position: relative;background: url('https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80') no-repeat top center;background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-03 h3{text-align: center; margin: 260px 0 0; font-size: 3em; font-weight: 500; color: #ffffff;text-shadow: 0 0 5px #000;  padding: 51px 0 15px;}
+
+main section#zona-slider article.slick-slider figure#slide-04 {width: 100%;height: 100vh;margin: 0;float: left;position: relative;background: url('https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat top center;background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-04 h3{text-align: center; margin: 260px 0 0; font-size: 3em; font-weight: 500; color: #fff;text-shadow: 0 0 5px #000;  padding: 51px 0 15px;}
+
+main section#zona-slider article.slick-slider figure#slide-05 {width: 100%;height: 100vh;margin: 0;float: left;position: relative;background: url('https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&q=80') no-repeat top center;background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-05 h3{text-align: center; margin: 260px 0 0; font-size: 3em; font-weight: 500; color: #fff;text-shadow: 0 0 5px #000;  padding: 51px 0 15px;}
+
+main section#zona-slider article.slick-slider figure#slide-06 {width: 100%;height: 100vh;margin: 0;float: left;position: relative;background: url('https://images.unsplash.com/photo-1534134368327-3d2bd764f1ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') no-repeat top center;background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-06 h3{text-align: center; margin: 260px 0 0; font-size: 3em; font-weight: 500; color: #fff;text-shadow: 0 0 5px #000;  padding: 51px 0 15px;}
+
+
+/* Bloque Categorías */
+main section#bloque-categorias { width: 100%; height: auto; margin: 35px auto 51px; float: none; position: relative; }
+main section#bloque-categorias nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; text-align: center;}
+main section#bloque-categorias nav a { width: 31%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a#img-equipo { background: url('../img/equipo.jpg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-de-proyecto { background: url('../img/espacios-corporativos.jpg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-logo-banner { background: url('../img/moodboard-contactanos.jpg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: #999; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+/* Bloque Productos */
+
+main section.bloque-servicio { width: 100%; height: auto; margin: 0 0px 108px; float: none; position: relative;; }
+main section.bloque-servicio article {  width: 1100px; height: auto; margin: 0 auto; float: none; position: relative;}
+main section.bloque-servicio article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 600; }
+
+main section.bloque-servicio article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-servicio article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-servicio article nav a span.nombre-subcategoria { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-servicio article nav a span.descripcion { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-servicio article nav a img { width: 100%; height: 400px; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: -8; transition: all 0.3s ease-in;}
+main section.servicio nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section.bloque-servicios article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-servicios article nav a:hover span.nombre-subcategoria { color: #000; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-servicios article nav a:hover span.descripcion { color: #333; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-servicios article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+main section.bloque-servicios nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+/*CSS De la sección del producto*/
+main hr { width: 80%; margin-bottom: 50px;}
+
+main section#ficha-producto { width: 100%; height: auto; margin: 0 auto 145px; float: none; position: relative;}
+main section#ficha-producto article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative;}
+main section#ficha-producto article figure {  width: 520px; height: 520px; margin: 0 auto; float: left; position: relative; }
+main section#ficha-producto article figure img { width: 100%; height: 90%; margin: 0 auto; float: none; position: relative; display: block;}
+
+main section#ficha-producto article div#info-producto { width: 480px; height: 520px; margin: 0; float: right; position: relative; }
+main section#ficha-producto article div#info-producto h2 { color: #d8ae98; font-weight: 650; font-size: 2.25em; text-align: left; padding: 65px 0 20px; font-family: 'Open Sans Condensed', sans-serif;}
+main section#ficha-producto article div#info-producto p { color: #333; font-weight: 400; font-size: 1.45em; text-align: left; padding: 0 52px 30px 0; font-family: 'Open Sans Condensed', sans-serif;}
+main section#ficha-producto article div#info-producto a { width: 120px; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: #ffffff; background: #717967; font-weight: 600; font-size: 1.25em; text-align: center; padding: 12px 12px; border-radius: 25px; transition: all 0.3s ease-in; font-family: 'Nanum Gothic', sans-serif; }
+
+/*Footer*/
+footer { float: none; width: 100%; padding-top: 52px; padding-bottom: 22px; display: block; margin: 0; position: relative; left: 0; top: 0; bottom: 0px; z-index: 99998; background: #dadada6c; text-align: center;}
+
+footer div#superior-footer div.cajas-footer img { width: 263px}
+
+
+
+
+/* Zona de Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    main section.bloque-productos article { width: 80%; }
+    main section.bloque-productos article h3 { text-align: center; padding: 0 12px 10px 12px; }
+    main section.bloque-productos article nav a { width: 100%; height: 286px; margin: 0 auto 25px; display: block; overflow: hidden; }
+    main section.bloque-productos article nav a img { width: auto; height: 100%; }
+}
+
+@media only screen and (max-width: 999px){
+    
+}
+
+@media only screen and (max-width: 899px){
+    main section#bloque-categorias nav a { width: 96%; margin: 2% auto; display: block; }
+}
+
+@media only screen and (max-width: 699px){
+    
+}
+
+/* Móviles Grandes */
+@media only screen and (max-width: 499px){
+    main section.bloque-productos article { width: 90%; }
+}
+
+/* Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
